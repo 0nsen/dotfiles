@@ -128,3 +128,6 @@ neofetch
 
 # INITIALIZE STARSHIP PROMPT
 eval "$(starship init bash)"
+
+# FOR NEOVIM
+export PATH="$PATH:/opt/nvim-linux64/bin"
