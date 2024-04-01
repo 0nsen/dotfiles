@@ -25,5 +25,6 @@ require("ibl").setup {
 	scope = { 
 		highlight = "RainbowYellow",
 		show_start = false, 
+		show_end = false,
 	},
 }
