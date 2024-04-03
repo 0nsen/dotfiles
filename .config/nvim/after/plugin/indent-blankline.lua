@@ -22,9 +22,9 @@ hooks.register(hooks.type.HIGHLIGHT_SETUP, function()
 end)
 
 require("ibl").setup { 
-	scope = { 
-		highlight = "RainbowYellow",
-		show_start = false, 
-		show_end = false,
-	},
+    scope = { 
+        highlight = "RainbowYellow",
+        show_start = false, 
+        show_end = false,
+    },
 }
