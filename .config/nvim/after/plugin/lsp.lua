@@ -17,6 +17,14 @@ cmp.setup({
 })
 
 
+lsp_zero.set_sign_icons({
+    error = '✘',
+    warn = '▲',
+    hint = '⚑',
+    info = '»'
+})
+
+
 require('mason').setup({})
 require('mason-lspconfig').setup({
     ensure_installed = {
