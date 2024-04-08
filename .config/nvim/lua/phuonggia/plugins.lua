@@ -43,9 +43,5 @@ return require('packer').startup(function(use)
 
     use 'windwp/nvim-ts-autotag'
 
-    use {
-        'ThePrimeagen/harpoon',
-        branch = 'harpoon2',
-        requires = {{ 'nvim-lua/plenary.nvim' }}
-    }
+    use 'akinsho/bufferline.nvim' 
 end)
