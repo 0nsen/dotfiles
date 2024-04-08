@@ -42,4 +42,10 @@ return require('packer').startup(function(use)
     use 'nvim-tree/nvim-tree.lua'
 
     use 'windwp/nvim-ts-autotag'
+
+    use {
+        'ThePrimeagen/harpoon',
+        branch = 'harpoon2',
+        requires = {{ 'nvim-lua/plenary.nvim' }}
+    }
 end)
