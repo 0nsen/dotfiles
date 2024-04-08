@@ -14,7 +14,7 @@ local function my_on_attach(bufnr)
     api.config.mappings.default_on_attach(bufnr)
 
     -- custom mappings
-    vim.keymap.set('n', 'tt', api.tree.toggle)
+    vim.keymap.set('c', 'tt', 'NvimTreeToggle')
 end
 
 -- pass to setup along with your other options
