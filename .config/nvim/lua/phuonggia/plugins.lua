@@ -40,4 +40,6 @@ return require('packer').startup(function(use)
     use 'nvim-lualine/lualine.nvim'
 
     use 'nvim-tree/nvim-tree.lua'
+
+    use 'windwp/nvim-ts-autotag'
 end)
