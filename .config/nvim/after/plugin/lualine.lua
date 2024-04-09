@@ -1,5 +1,11 @@
 require('lualine').setup {
     sections = {
-        lualine_x = {},
-    }
+        lualine_c = {
+            {
+                'filename',
+                path = 1,
+            },
+        },
+        lualine_x = {}
+    },
 }

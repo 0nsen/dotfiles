@@ -44,4 +44,6 @@ return require('packer').startup(function(use)
     use 'windwp/nvim-ts-autotag'
 
     use 'akinsho/bufferline.nvim' 
+
+    use 'tpope/vim-fugitive'
 end)
