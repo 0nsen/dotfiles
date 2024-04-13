@@ -46,4 +46,14 @@ return require('packer').startup(function(use)
     use 'akinsho/bufferline.nvim' 
 
     use 'tpope/vim-fugitive'
+
+    use {
+        "windwp/nvim-autopairs",
+        event = "InsertEnter",
+        config = function()
+            require("nvim-autopairs").setup {}
+        end
+    }
+
+    use 'lewis6991/gitsigns.nvim'
 end)
