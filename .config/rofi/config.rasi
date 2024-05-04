@@ -1,0 +1,67 @@
+configuration {
+    modi: "drun,window";
+    font: "Fira Code Medium 20";
+    show-icons: true;
+    drun-show-actions: true;
+    drun-display-format: "{name} [<span size='small'><i>({generic})</i></span>]";
+    scroll-method: 1;
+    window-format: "{c}    {t}   {w}";
+    display-window: "Switch: ";
+    display-drun: "Launch: ";
+    display-run: "Run: ";
+    timeout {
+      action: "kb-cancel";
+      delay:  0;
+    }
+    filebrowser {
+      directories-first: true;
+      sorting-method:    "name";
+    }
+/*	normalize-match: false;*/
+/*	pid: "/run/user/1000/rofi.pid";*/
+/*	m: "-5";*/
+}
+
+@theme "/dev/null"
+
+* {
+    bg-color: #1F1F28;
+    fg-color: #DDD8BB;
+    textbox-padding: 0.5em 1.5em;
+
+    background-color: @bg-color;
+    margin: 0;
+}
+
+window {
+    width: 30%;
+}
+
+inputbar {
+    padding: @textbox-padding;
+}
+
+entry, prompt {
+    text-color: @fg-color;
+}
+
+element {
+    text-color: @fg-color;
+    padding: @textbox-padding;
+    spacing: 0.5em;
+}
+
+element-text {
+    vertical-align: 0.5;
+    text-color: @fg-color;
+    highlight: bold;
+}
+
+element-icon {
+    size: 1em;
+}
+
+element selected, element-text selected {
+    background-color: @fg-color;
+    text-color: @bg-color;
+}
