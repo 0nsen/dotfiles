@@ -1,0 +1,83 @@
+# All graphs and meters can be gradients
+# For single color graphs leave "mid" and "end" variable empty.
+# Use "start" and "end" variables for two color gradient
+# Use "start", "mid" and "end" for three color gradient
+
+# Main background, empty for terminal default, need to be empty if you want transparent background
+theme[main_bg]="#1F1F28"
+
+# Main text color
+theme[main_fg]="#DDD8BB"
+
+# Title color for boxes
+theme[title]="#F1C982"
+
+# Higlight color for keyboard shortcuts
+theme[hi_fg]="#E46A78"
+
+# Background color of selected item in processes box
+theme[selected_bg]="#957FB8"
+
+# Foreground color of selected item in processes box
+theme[selected_fg]="#FFFFFF"
+
+# Color of inactive/disabled text
+theme[inactive_fg]="#3C3C51"
+
+# Misc colors for processes box including mini cpu graphs, details memory graph and details status text
+theme[proc_misc]="#BD93F9"
+
+# Cpu box outline color
+theme[cpu_box]="#F1C982"
+
+# Memory/disks box outline color
+theme[mem_box]="#F1C982"
+
+# Net up/down box outline color
+theme[net_box]="#F1C982"
+
+# Processes box outline color
+theme[proc_box]="#F1C982"
+
+# Box divider line and small boxes line color
+theme[div_line]="#DDD8BB"
+
+# CPU graph colors
+theme[cpu_start]="#98BC6D"
+theme[cpu_mid]="#98BC6D"
+theme[cpu_end]="#98BC6D"
+
+# Temperature graph colors
+theme[temp_start]="#7BC2DF"
+theme[temp_mid]="#7BC2DF"
+theme[temp_end]="#7BC2DF"
+
+# Mem/Disk free meter
+theme[free_start]="#98BC6D"
+theme[free_mid]="#98BC6D"
+theme[free_end]="#98BC6D"
+
+# Mem/Disk cached meter
+theme[cached_start]="#98BC6D"
+theme[cached_mid]="#98BC6D"
+theme[cached_end]="#98BC6D"
+
+# Mem/Disk available meter
+theme[available_start]="#98BC6D"
+theme[available_mid]="#98BC6D"
+theme[available_end]="#98BC6D"
+
+# Mem/Disk used meter
+theme[used_start]="#7BC2DF"
+theme[used_mid]="#7BC2DF"
+theme[used_end]="#7BC2DF"
+
+# Download graph colors
+theme[download_start]="#7BC2DF"
+theme[download_mid]="#7BC2DF"
+theme[download_end]="#7BC2DF"
+
+# Upload graph colors
+theme[upload_start]="#98BC6D"
+theme[upload_mid]="#98BC6D"
+theme[upload_end]="#98BC6D"
