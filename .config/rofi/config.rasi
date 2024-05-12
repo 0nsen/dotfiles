@@ -27,6 +27,7 @@ configuration {
 * {
     bg-color: #1F1F28;
     fg-color: #DDD8BB;
+    red-color: #E46A78;
     textbox-padding: 0.5em 1.5em;
 
     background-color: @bg-color;
@@ -35,6 +36,8 @@ configuration {
 
 window {
     width: 30%;
+    border: 1px;
+    border-color: @fg-color;
 }
 
 inputbar {
@@ -43,6 +46,11 @@ inputbar {
 
 entry, prompt {
     text-color: @fg-color;
+}
+
+textbox {
+    text-color: @red-color;
+    padding: @textbox-padding;
 }
 
 element {
