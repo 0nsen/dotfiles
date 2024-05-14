@@ -123,9 +123,6 @@ export NVM_DIR="$HOME/.nvm"
 
 . "$HOME/.cargo/env"
 
-# DISPLAY SYSTEM INFORMATION
-neofetch
-
 # INITIALIZE STARSHIP PROMPT
 eval "$(starship init bash)"
 
