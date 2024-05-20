@@ -58,4 +58,6 @@ return require('packer').startup(function(use)
     use 'lewis6991/gitsigns.nvim'
 
     use 'rmagatti/auto-session'
+    
+    use "epwalsh/obsidian.nvim"
 end)
