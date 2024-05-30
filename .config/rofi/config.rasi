@@ -1,6 +1,6 @@
 configuration {
     modi: "drun,window";
-    font: "Fira Code Medium 20";
+    font: "Fira Code Medium 12";
     show-icons: true;
     drun-show-actions: true;
     drun-display-format: "{name} [<span size='small'><i>({generic})</i></span>]";
