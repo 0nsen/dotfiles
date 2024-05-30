@@ -1,6 +1,6 @@
 configuration {
-    modi: "drun,window";
-    font: "Fira Code Medium 12";
+    modi: "drun,window,power-menu:rofi-power-menu";
+    font: "Josefin Sans 14";
     show-icons: true;
     drun-show-actions: true;
     drun-display-format: "{name} [<span size='small'><i>({generic})</i></span>]";
