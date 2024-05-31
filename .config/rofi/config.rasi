@@ -1,5 +1,5 @@
 configuration {
-    modi: "drun,window,power-menu:rofi-power-menu";
+    modi: "drun,power-menu:rofi-power-menu,run";
     font: "Josefin Sans 14";
     show-icons: true;
     drun-show-actions: true;
