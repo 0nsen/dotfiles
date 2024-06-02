@@ -34,10 +34,10 @@ exec --no-startup-id ibus-daemon
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork --image /usr/share/backgrounds/dracula-waves-44475a-1.png &
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork --image /usr/share/backgrounds/dracula-waves-44475a-1.png
 
 # Trigger authentication prompter for applications that require elevated privilege
-exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 
 # Compositor
 exec --no-startup-id "picom --experimental-backends -b"
@@ -53,6 +53,8 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
+
+bindsym $mod+p exec playerctl play-pause
 
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
@@ -162,9 +164,6 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
-# lock screen
-# bindsym $mod+Shift+x exec i3lock --image /usr/share/backgrounds/dracula-waves-44475a-1.png
-
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
