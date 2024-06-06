@@ -54,8 +54,13 @@ bindsym XF86AudioPrev exec playerctl previous
 bindsym $mod+p exec playerctl play-pause
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec xbacklight -inc 5 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightness
+
+# Sreenshot entire screen
+bindsym Print exec gnome-screenshot
+# Screenshot area
+bindsym $mod+Print exec gnome-screenshot -a
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -199,21 +204,20 @@ set $transparent #FFFFFF00
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        status_command i3blocks -c ~/.config/i3/i3blocks.conf
-        position top
-        # separator_symbol " "
-
-        colors {
-            background $background
-            statusline $white
-
+# bar {
+        # status_command i3blocks -c ~/.config/i3/i3blocks.conf
+        # position top
+ 
+        # colors {
+            # background $background
+            # statusline $white
+ 
             # class - border background text
-            focused_workspace $gold $gold $background
-            inactive_workspace $background $background $gold
-            urgent_workspace $red $red $background
-        }
-}
+            # focused_workspace $gold $gold $background
+            # inactive_workspace $background $background $gold
+            # urgent_workspace $red $red $background
+        # }
+# }
 
 title_align center
 default_border pixel 1
