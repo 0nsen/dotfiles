@@ -9,6 +9,7 @@ configuration {
     display-window: "Switch: ";
     display-drun: "Launch: ";
     display-run: "Run: ";
+    fixed-num-lines: false;
     timeout {
       action: "kb-cancel";
       delay:  0;
@@ -26,17 +27,26 @@ configuration {
 
 * {
     bg-color: #1F1F28;
+    bg-translucent: rgba(31, 31, 40, 0.7);
     fg-color: #DDD8BB;
     red-color: #E46A78;
+    green-color: #9EC967;
     textbox-padding: 0.5em 1.5em;
 
-    background-color: @bg-color;
+    background-color: transparent;
     margin: 0;
 }
 
 window {
     width: 30%;
     border-radius: 8;
+    location: center;
+    anchor: center;
+    background-color: @bg-translucent;
+}
+
+listview {
+    lines: 8;
 }
 
 inputbar {
@@ -70,6 +80,6 @@ element-icon {
 }
 
 element selected, element-text selected {
-    background-color: @fg-color;
+    background-color: @green-color;
     text-color: @bg-color;
 }
