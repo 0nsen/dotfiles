@@ -39,6 +39,9 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork --image /
 # Trigger authentication prompter for applications that require elevated privilege
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 
+# Launch compositor
+exec --no-startup-id "picom --experimental-backends -b"
+
 # Launch polybar
 exec --no-startup-id ~/.config/polybar/launch.sh
 
