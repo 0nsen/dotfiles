@@ -36,12 +36,11 @@ configuration {
 
 window {
     width: 30%;
-    border: 1px;
-    border-color: @fg-color;
+    border-radius: 8;
 }
 
 inputbar {
-    padding: @textbox-padding;
+    padding: 0.8em 1.5em;
 }
 
 entry, prompt {
