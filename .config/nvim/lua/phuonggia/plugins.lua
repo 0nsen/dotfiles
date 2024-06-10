@@ -60,4 +60,13 @@ return require('packer').startup(function(use)
     use 'rmagatti/auto-session'
     
     use "epwalsh/obsidian.nvim"
+
+    use 'mfussenegger/nvim-dap'
+    use { 
+        "rcarriga/nvim-dap-ui",
+        requires = {
+            "mfussenegger/nvim-dap",
+            "nvim-neotest/nvim-nio"
+        }
+    }
 end)
