@@ -3,7 +3,8 @@ local dap = require('dap')
 
 require('dapui').setup()
 
-require('dap').adapters['pwa-node'] = {
+-- DAP CONFIG FOR JAVASCRIPT --
+dap.adapters['pwa-node'] = {
     type = 'server',
     host = 'localhost',
     port = '${port}',
@@ -12,8 +13,7 @@ require('dap').adapters['pwa-node'] = {
         args = {'/opt/js-debug/src/dapDebugServer.js', '${port}'},
     }
 }
-
-require('dap').configurations.javascript = {
+dap.configurations.javascript = {
     {
         type = 'pwa-node',
         request = 'launch',
@@ -22,6 +22,7 @@ require('dap').configurations.javascript = {
         cwd = '${workspaceFolder}',
     }
 }
+-- END --
 
 dap.listeners.before.attach.dapui_config = function()
     dapui.open()
