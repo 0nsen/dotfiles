@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+
+ICON_PATH=/usr/share/icons/iconsax/linear
+
+case $1 in
+	up)
+		# Set the volume on (if it was muted)
+		pactl set-sink-mute @DEFAULT_SINK@ 0
+		pactl set-sink-volume @DEFAULT_SINK@ +5%
+		;;
+	down)
+		pactl set-sink-mute @DEFAULT_SINK@ 0
+		pactl set-sink-volume @DEFAULT_SINK@ -5%
+		;;
+	mute)
+		pactl set-sink-mute @DEFAULT_SINK@ toggle
+		;;
+esac
+
+VOLUME=$(pactl get-sink-volume @DEFAULT_SINK@ | grep -Po '[0-9]+(?=%)' | awk 'NR==1 {print}')
+
+send_notification() {
+	if [[ "$1" = "mute" || "$VOLUME" -eq 0 ]]; then 
+        ICON="volume-cross-linear.svg"; 
+    elif [ "$VOLUME" -lt 50 ]; then
+        ICON="volume-low-1-linear.svg"; 
+    else
+        ICON="volume-high-linear.svg"; 
+    fi
+
+	if [ "$1" = "mute" ]; then
+        TEXT="MUTED"; 
+    elif [ "$VOLUME" -le 100 ]; then
+        TEXT="${VOLUME}%"; 
+    else
+        TEXT="LOUD AF ${VOLUME}%"
+    fi
+
+	dunstify -a "volume" -r 9993 -t 2000 -h int:value:"$VOLUME" -i "$ICON_PATH/$ICON" "$TEXT" 
+}
+
+case $1 in
+	mute)
+		case "$(pactl get-sink-mute @DEFAULT_SINK@ | cut -d' ' -f2)" in
+			yes) send_notification mute;;
+			no) send_notification;;
+		esac;;
+	*)
+		send_notification;;
+esac
