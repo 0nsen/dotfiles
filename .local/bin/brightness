@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+ICON_PATH=/usr/share/icons/iconsax/linear
+
+case $1 in
+	up)
+        light -A 5
+		;;
+	down)
+        light -U 5
+		;;
+esac
+
+BRIGHTNESS=$(light -G | grep ^[0-9]*\.)
+
+send_notification() {
+    ICON="sun-1-linear.svg"; 
+    TEXT="${BRIGHTNESS%.00}%"; 
+
+	dunstify -a "brightness" -r 9994 -t 2000 -h int:value:"$BRIGHTNESS" -i "$ICON_PATH/$ICON" "$TEXT" 
+}
+
+case $1 in
+	*)
+		send_notification;;
+esac

@@ -313,9 +313,12 @@
 # NOTE: It might be helpful to run dunst -print in a terminal in order
 # to find fitting options for rules.
 
-#[history-ignore]
-    # This notification will not be saved in history
+[volume-ignore]
     summary = volume
+    history_ignore = true
+
+[brightness-ignore]
+    summary = brightness
     history_ignore = true
 
 # Disable the transient hint so that idle_threshold cannot be bypassed from the
