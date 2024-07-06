@@ -20,5 +20,5 @@ vim.keymap.set('n', '<C-2>', function() bufferline.go_to(2, true) end)
 vim.keymap.set('n', '<C-3>', function() bufferline.go_to(3, true) end)
 vim.keymap.set('n', '<C-4>', function() bufferline.go_to(4, true) end)
 
-vim.keymap.set('n', '<C-.>', '<Cmd>BufferLineCycleNext<CR>')
-vim.keymap.set('n', '<C-,>', '<Cmd>BufferLineCyclePrev<CR>')
+vim.keymap.set('n', ']b', '<Cmd>BufferLineCycleNext<CR>')
+vim.keymap.set('n', '[b', '<Cmd>BufferLineCyclePrev<CR>')
