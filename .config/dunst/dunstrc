@@ -4,10 +4,10 @@
     follow = mouse
 
     # Dynamic sizes (from, to)
-    width = (100, 300)
+    width = 300
     height = (30, 100)
 
-    notification_limit = 10
+    notification_limit = 8
     # Show how many messages are currently hidden (due to limit)
     indicate_hidden = true
 
@@ -17,7 +17,7 @@
     offset = (20, 20)
 
     corners = all
-    corner_radius = 8
+    corner_radius = 4
 
     # Define which corners to round when drawing icon image
     icon_corners = all
@@ -34,15 +34,15 @@
     separator_color = frame
 
     # Vertical padding.
-    padding = 8
+    padding = 16
     # Horizontal padding.
-    horizontal_padding = 8
+    horizontal_padding = 16
     # Padding between text and icon
     text_icon_padding = 8
 
     # Border size
-    frame_width = 0
-    # frame_color = 
+    frame_width = 1
+    frame_color = "#7BC2DF"
 
     # Gap between notifications.
     # Requires a compositor
@@ -60,7 +60,7 @@
     # Set to 0 to disable.
     # A client can set the 'transient' hint to bypass this. See the rules
     # section for how to disable this if necessary
-    idle_threshold = 300
+    idle_threshold = 0
 
     font = Josefin Sans Semibold 10
     line_height = 4
@@ -104,7 +104,7 @@
     # left, center, right
     alignment = left
     # top, center, bottom
-    vertical_alignment = center
+    vertical_alignment = top
 
     # Show age of message if message is older than show_age_threshold seconds
     # Set to -1 to disable.
@@ -121,7 +121,7 @@
     show_indicators = true
 
     # Paths to default icons.
-    icon_path = /usr/share/icons/iconsax
+    icon_path = /usr/share/icons/iconsax/linear
     # enable_recursive_icon_lookup = true
 
     word_wrap = true
@@ -175,11 +175,11 @@
 
     progress_bar = true
     progress_bar_horizontal_alignment = center
-    progress_bar_height = 10
+    progress_bar_height = 12
     # progress_bar_min_width = 150
     # progress_bar_max_width = 300
-    progress_bar_frame_width = 0
-    progress_bar_corner_radius = 0
+    progress_bar_frame_width = 1
+    progress_bar_corner_radius = 8
     progress_bar_corners = all
 
     # Print a notification on startup.
@@ -246,16 +246,16 @@
     per_monitor_dpi = false
 
 [urgency_low]
-    background = "#7BC2DF"
-    foreground = "#1F1F28"
+    background = "#3C3C51"
+    foreground = "#DDD8BB"
     highlight = "#F1C982"
     # frame_color = 
     timeout = 8
     # icon = /path/to/icon
 
 [urgency_normal]
-    background = "#7BC2DF"
-    foreground = "#1F1F28"
+    background = "#3C3C51"
+    foreground = "#DDD8BB"
     highlight = "#F1C982"
     # frame_color = 
     timeout = 8
@@ -265,7 +265,7 @@
     background = "#EC818C"
     foreground = "#1F1F28"
     highlight = "#F1C982"
-    # frame_color = 
+    frame_color = "#F1C982"
     timeout = 8
     # icon = /path/to/icon
 
