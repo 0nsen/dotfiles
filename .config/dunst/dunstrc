@@ -7,6 +7,11 @@
     width = 300
     height = (30, 100)
 
+    highlight = "#F1C982"
+    background = "#1F1F28"
+    foreground = "#DDD8BB"
+    timeout = 8
+
     notification_limit = 8
     # Show how many messages are currently hidden (due to limit)
     indicate_hidden = true
@@ -41,8 +46,8 @@
     text_icon_padding = 8
 
     # Border size
-    frame_width = 1
-    frame_color = "#7BC2DF"
+    frame_width = 2
+    frame_color = "#F1C982"
 
     # Gap between notifications.
     # Requires a compositor
@@ -246,26 +251,26 @@
     per_monitor_dpi = false
 
 [urgency_low]
-    background = "#3C3C51"
-    foreground = "#DDD8BB"
-    highlight = "#F1C982"
-    # frame_color = 
-    timeout = 8
+    # background = ""
+    # foreground = ""
+    # highlight = ""
+    # frame_color = ""
+    # timeout = 8
     # icon = /path/to/icon
 
 [urgency_normal]
-    background = "#3C3C51"
-    foreground = "#DDD8BB"
-    highlight = "#F1C982"
-    # frame_color = 
-    timeout = 8
+    # background = "#1F1F28"
+    # foreground = "#DDD8BB"
+    # highlight = ""
+    # frame_color = ""
+    # timeout = 8
     # icon = /path/to/icon
 
 [urgency_critical]
-    background = "#EC818C"
-    foreground = "#1F1F28"
-    highlight = "#F1C982"
-    frame_color = "#F1C982"
+    background = "#1F1F28"
+    foreground = "#EC818C"
+    highlight = "#EC818C"
+    frame_color = "#EC818C"
     timeout = 8
     # icon = /path/to/icon
 
