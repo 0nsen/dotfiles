@@ -6,6 +6,16 @@ require('lualine').setup {
                 path = 1,
             },
         },
-        lualine_x = {}
+        lualine_x = {},
+				lualine_y = {},
+				lualine_z = {},
     },
+		inactive_sections = {
+				lualine_c = {
+						{
+								'filename',
+								path = 1,
+						},
+				},
+		},
 }
