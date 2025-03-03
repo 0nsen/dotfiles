@@ -18,3 +18,8 @@ vim.opt.incsearch = true
 vim.opt.termguicolors = true
 
 vim.opt.clipboard = "unnamedplus" -- to always use clipboard for all operations
+
+-- Everforest theme config
+vim.g.everforest_transparent_background = 1
+vim.g.everforest_diagnostic_text_highlight = 1
+

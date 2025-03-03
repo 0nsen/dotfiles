@@ -75,4 +75,6 @@ return require('packer').startup(function(use)
 			})
 		end
 	})
+
+	use 'sainnhe/everforest'
 end)
