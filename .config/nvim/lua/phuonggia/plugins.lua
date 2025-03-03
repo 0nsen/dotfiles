@@ -10,9 +10,9 @@ return require('packer').startup(function(use)
 	use "rebelot/kanagawa.nvim"
 
 	use {
-		  'nvim-telescope/telescope.nvim', tag = '0.1.6',
+		'nvim-telescope/telescope.nvim', tag = '0.1.6',
 		-- or                            , branch = '0.1.x',
-		  requires = { {'nvim-lua/plenary.nvim'} }
+		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
@@ -33,46 +33,46 @@ return require('packer').startup(function(use)
 			{'L3MON4D3/LuaSnip'},
 		}
 	}
-    
-    -- some of the packages require this
-    use 'nvim-tree/nvim-web-devicons'
 
-    use 'nvim-lualine/lualine.nvim'
+	-- some of the packages require this
+	use 'nvim-tree/nvim-web-devicons'
 
-    use 'nvim-tree/nvim-tree.lua'
+	use 'nvim-lualine/lualine.nvim'
 
-    use 'akinsho/bufferline.nvim' 
+	use 'nvim-tree/nvim-tree.lua'
 
-    use 'tpope/vim-fugitive'
+	use 'akinsho/bufferline.nvim' 
 
-    use {
-        "windwp/nvim-autopairs",
-        event = "InsertEnter",
-        config = function()
-            require("nvim-autopairs").setup {}
-        end
-    }
+	use 'tpope/vim-fugitive'
 
-    use 'lewis6991/gitsigns.nvim'
+	use {
+		"windwp/nvim-autopairs",
+		event = "InsertEnter",
+		config = function()
+			require("nvim-autopairs").setup {}
+		end
+	}
 
-    use "epwalsh/obsidian.nvim"
+	use 'lewis6991/gitsigns.nvim'
 
-    use 'mfussenegger/nvim-dap'
-    use { 
-        "rcarriga/nvim-dap-ui",
-        requires = {
-            "mfussenegger/nvim-dap",
-            "nvim-neotest/nvim-nio"
-        }
-    }
+	use "epwalsh/obsidian.nvim"
 
-		use({
-			"kylechui/nvim-surround",
-			tag = "*", -- Use for stability; omit to use `main` branch for the latest features
-			config = function()
-				require("nvim-surround").setup({
-					-- Configuration here, or leave empty to use defaults
-				})
-			end
-		})
-	end)
+	use 'mfussenegger/nvim-dap'
+	use { 
+		"rcarriga/nvim-dap-ui",
+		requires = {
+			"mfussenegger/nvim-dap",
+			"nvim-neotest/nvim-nio"
+		}
+	}
+
+	use({
+		"kylechui/nvim-surround",
+		tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+		config = function()
+			require("nvim-surround").setup({
+				-- Configuration here, or leave empty to use defaults
+			})
+		end
+	})
+end)
