@@ -41,8 +41,6 @@ return require('packer').startup(function(use)
 
     use 'nvim-tree/nvim-tree.lua'
 
-    use 'windwp/nvim-ts-autotag'
-
     use 'akinsho/bufferline.nvim' 
 
     use 'tpope/vim-fugitive'
@@ -67,4 +65,14 @@ return require('packer').startup(function(use)
             "nvim-neotest/nvim-nio"
         }
     }
-end)
+
+		use({
+			"kylechui/nvim-surround",
+			tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+			config = function()
+				require("nvim-surround").setup({
+					-- Configuration here, or leave empty to use defaults
+				})
+			end
+		})
+	end)
