@@ -204,13 +204,22 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-set $gold #F1C982
-set $dark #3C3C51
-set $background #1F1F28
-set $white #DDD8BB
-set $gray #A8A48D
-set $red #EC818C
+# kanagawa
+set $kana_gold #F1C982
+set $kana_dark #3C3C51
+set $kana_background #1F1F28
+set $kana_white #DDD8BB
+set $kana_gray #A8A48D
+set $kana_red #EC818C
 set $transparent #FFFFFF00
+
+# tomorrow-night-burns
+set $tmr_red #D3494E
+set $tmr_dark #A1B0B8
+set $tmr_background #252525
+
+# everforest
+set $ever_turquoise #83C092
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -219,13 +228,13 @@ set $transparent #FFFFFF00
 # 	position top
 #
 # 	colors {
-# 		background $background
-# 		statusline $white
+# 		background $kana_background
+# 		statusline $kana_white
 #
 # 		# class - border background text
-# 		focused_workspace $gold $gold $background
-# 		inactive_workspace $background $background $gold
-# 		urgent_workspace $red $red $background
+# 		focused_workspace $kana_gold $kana_gold $kana_background
+# 		inactive_workspace $kana_background $kana_background $kana_gold
+# 		urgent_workspace $kana_red $kana_red $kana_background
 # 	}
 # }
 
@@ -233,10 +242,20 @@ title_align center
 default_border pixel 1
 gaps inner 5
 
-# class - border background text indicator child_border
-client.focused $gold $gold $background $gold $gold
-client.focused_inactive $dark $dark $gray $dark $dark
-client.unfocused $dark $dark $gray $dark $dark
-client.urgent $red $red $dark $red $red
-# client.placeholder 
-client.background $background
+# THE SECTIONS BELOW ARE FORMATTED AS FOLLOW
+# CLASS - BORDER BACKGROUND TEXT INDICATOR CHILD_BORDER
+
+# kanagawa
+# client.focused $kana_gold $kana_gold $kana_background $kana_gold $kana_gold
+# client.focused_inactive $kana_dark $kana_dark $kana_gray $kana_dark $kana_dark
+# client.unfocused $kana_dark $kana_dark $kana_gray $kana_dark $kana_dark
+# client.urgent $kana_red $kana_red $kana_dark $kana_red $kana_red
+# client.background $kana_background
+# # client.placeholder 
+
+# tomorrow-night-burns
+client.focused $ever_turquoise $ever_turquoise $tmr_background $ever_turquoise $ever_turquoise
+client.focused_inactive $tmr_background $tmr_background $tmr_dark $tmr_dark $tmr_dark
+client.unfocused $tmr_background $tmr_background $tmr_dark $tmr_dark $tmr_background
+client.urgent $tmr_red $tmr_red $tmr_dark $tmr_red $tmr_red
+client.background $tmr_background
