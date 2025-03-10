@@ -77,4 +77,12 @@ return require('packer').startup(function(use)
 	})
 
 	use 'sainnhe/everforest'
+
+	use {
+		'numToStr/Comment.nvim',
+		config = function()
+			require('Comment').setup()
+		end
+	}
+	use 'JoosepAlviste/nvim-ts-context-commentstring' -- FOR MULTIPLE LANGUAGES IN ONE FILE
 end)
