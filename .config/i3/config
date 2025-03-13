@@ -221,6 +221,9 @@ set $tmr_background #252525
 # everforest
 set $ever_turquoise #83C092
 set $ever_coral #E67E80
+set $ever_sage #A7C080
+set $ever_beige #D3C6AA
+set $ever_mako #4F595F
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -255,8 +258,16 @@ gaps inner 5
 # # client.placeholder 
 
 # tomorrow-night-burns
-client.focused $ever_coral $ever_coral $tmr_background $ever_coral $ever_coral
-client.focused_inactive $tmr_background $tmr_background $tmr_dark $tmr_dark $tmr_dark
-client.unfocused $tmr_background $tmr_background $tmr_dark $tmr_dark $tmr_background
-client.urgent $tmr_red $tmr_red $tmr_dark $tmr_red $tmr_red
-client.background $tmr_background
+# client.focused $ever_coral $ever_coral $tmr_background $ever_coral $ever_coral
+# client.focused_inactive $tmr_background $tmr_background $tmr_dark $tmr_dark $tmr_dark
+# client.unfocused $tmr_background $tmr_background $tmr_dark $tmr_dark $tmr_background
+# client.urgent $tmr_red $tmr_red $tmr_dark $tmr_red $tmr_red
+# client.background $tmr_background
+
+# everforest
+client.focused $ever_sage $ever_mako $ever_beige $ever_sage $ever_sage
+client.focused_inactive $ever_mako $ever_mako $ever_beige $ever_mako $ever_mako
+client.focused_tab_title $ever_mako $ever_mako $ever_beige $ever_mako $ever_mako
+client.unfocused $ever_mako $ever_mako $ever_beige $ever_mako $ever_mako
+client.urgent $ever_mako $ever_mako $ever_beige $ever_mako $ever_mako
+client.placeholder $ever_mako $ever_mako $ever_beige $ever_mako $ever_mako

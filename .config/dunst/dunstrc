@@ -395,13 +395,22 @@
 	# # icon = /path/to/icon
 
 [tomorrow-night-burns]
-	background = "#252525"
-	foreground = "#F5F5F5"
-	highlight = "#FC595F"
-	frame_color = "#FC595F"
+	# background = "#252525"
+	# foreground = "#F5F5F5"
+	# highlight = "#FC595F"
+	# frame_color = "#FC595F"
 [urgency_critical]
-	background = "#FC595F"
-	foreground = "#252525"
-	highlight = "#F5F5F5"
-	frame_color = "#F5F5F5"
+	# background = "#FC595F"
+	# foreground = "#252525"
+	# # highlight = "#F5F5F5"
+	# frame_color = "#F5F5F5"
+
+[everforest]
+	background = "#2B3339"
+	foreground = "#D9D7D6"
+	frame_color = "#2B3339"
+	separator_color = "#263640"
+[urgency_critical]
+	background = "#061115"
+	foreground = "#D9D7D6"
 
