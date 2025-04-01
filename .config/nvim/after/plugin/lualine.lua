@@ -1,8 +1,8 @@
 require('lualine').setup {
-	-- options = {
-	-- 	component_separators = { left = '|' },
-	-- 	section_separators = { left = '', right = '' },
-	-- },
+	options = {
+		component_separators = { left = '\\' },
+		section_separators = { left = '', right = '' },
+	},
 	sections = {
 		lualine_a = {
 			{

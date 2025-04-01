@@ -19,7 +19,7 @@ font pango:Josefin Sans 10
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 
 # Set wallpaper
-exec --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/008.png
+exec --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/043.png
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
