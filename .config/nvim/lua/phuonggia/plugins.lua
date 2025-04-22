@@ -85,4 +85,7 @@ return require('packer').startup(function(use)
 		end
 	}
 	use 'JoosepAlviste/nvim-ts-context-commentstring' -- FOR MULTIPLE LANGUAGES IN ONE FILE
+
+	use 'github/copilot.vim'
+	use 'CopilotC-Nvim/CopilotChat.nvim'
 end)
