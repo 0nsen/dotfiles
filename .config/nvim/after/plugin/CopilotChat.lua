@@ -3,5 +3,8 @@ require('CopilotChat').setup {
 		reset = {
 			normal = '',
 		}
-	}
+	},
+	sticky = {
+		'#buffers:visible',
+  }
 }
