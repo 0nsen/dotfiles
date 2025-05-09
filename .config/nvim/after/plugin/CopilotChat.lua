@@ -6,5 +6,5 @@ require('CopilotChat').setup {
 	},
 	sticky = {
 		'#buffers:visible',
-  }
+	}
 }

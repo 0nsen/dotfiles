@@ -1,18 +1,18 @@
 local bufferline = require('bufferline')
 
 bufferline.setup({
-    options = {
-        mode = 'tabs',
-        diagnostics = 'nvim_lsp',
-        offsets = {
-            {
-                filetype = 'NvimTree',
-                text = 'NvimTree',
-                highlight = 'Directory',
-                separator = true,
-            },
-        },
-    },
+	options = {
+		mode = 'tabs',
+		diagnostics = 'nvim_lsp',
+		offsets = {
+			{
+				filetype = 'NvimTree',
+				text = 'NvimTree',
+				highlight = 'Directory',
+				separator = true,
+			},
+		},
+	},
 })
 
 vim.keymap.set('n', '<C-1>', function() bufferline.go_to(1, true) end)

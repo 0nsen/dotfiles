@@ -1,5 +1,5 @@
 require('gitsigns').setup({
-    current_line_blame = true,
+	current_line_blame = true,
 })
 
 vim.keymap.set('n', ']h', '<Cmd>Gitsigns next_hunk<CR>')

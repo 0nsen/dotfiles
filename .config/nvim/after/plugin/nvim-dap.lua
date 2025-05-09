@@ -5,36 +5,36 @@ require('dapui').setup()
 
 -- DAP CONFIG FOR JAVASCRIPT --
 dap.adapters['pwa-node'] = {
-    type = 'server',
-    host = 'localhost',
-    port = '${port}',
-    executable = {
-        command = 'node',
-        args = {'/opt/js-debug/src/dapDebugServer.js', '${port}'},
-    }
+	type = 'server',
+	host = 'localhost',
+	port = '${port}',
+	executable = {
+		command = 'node',
+		args = {'/opt/js-debug/src/dapDebugServer.js', '${port}'},
+	}
 }
 dap.configurations.javascript = {
-    {
-        type = 'pwa-node',
-        request = 'launch',
-        name = 'Launch file',
-        program = '${file}',
-        cwd = '${workspaceFolder}',
-    }
+	{
+		type = 'pwa-node',
+		request = 'launch',
+		name = 'Launch file',
+		program = '${file}',
+		cwd = '${workspaceFolder}',
+	}
 }
 -- END --
 
 dap.listeners.before.attach.dapui_config = function()
-    dapui.open()
+	dapui.open()
 end
 dap.listeners.before.launch.dapui_config = function()
-    dapui.open()
+	dapui.open()
 end
 dap.listeners.before.event_terminated.dapui_config = function()
-    dapui.close()
+	dapui.close()
 end
 dap.listeners.before.event_exited.dapui_config = function()
-    dapui.close()
+	dapui.close()
 end
 
 vim.keymap.set('n', '<leader>dt', function() dapui.toggle() end)
