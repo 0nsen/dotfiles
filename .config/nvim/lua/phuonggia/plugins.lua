@@ -24,8 +24,8 @@ return require('packer').startup(function(use)
 		branch = 'v3.x',
 		requires = {
 			--- Uncomment the two plugins below if you want to manage the language servers from neovim
-			{'williamboman/mason.nvim'},
-			{'williamboman/mason-lspconfig.nvim'},
+			{'williamboman/mason.nvim', tag = 'v1.11.0'}, -- temp workaround mason breaking changes
+			{'williamboman/mason-lspconfig.nvim', tag = 'v1.32.0'}, -- temp workaround mason breaking changes
 
 			{'neovim/nvim-lspconfig'},
 			{'hrsh7th/nvim-cmp'},
