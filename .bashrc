@@ -135,5 +135,5 @@ alias ga='git add'
 alias gc='git commit'
 alias gp='git push'
 alias gu='git pull'
-alias gd="git diff --output-indicator-new=' ' --output-indicator-old=' '"
-alias gl="git log --graph --pretty=format:'%C(yellow)%h %C(cyan)%an <%ae> %C(blue)%ah %C(auto)%D %n %s %n'"
+alias gd="git diff"
+alias gl="git log --graph --pretty=format:'%C(yellow)%h %C(white)%an <%ae> %C(blue)%ah %C(auto)%D %n %s %n'"
