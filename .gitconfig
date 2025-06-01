@@ -1,0 +1,22 @@
+[user]
+	name = 0nsen
+	email = to.the.lettr@pm.me
+
+[status]
+	branch = true
+	showStash = true
+
+[pull]
+	rebase = false
+
+[color "diff"]
+	meta = black bold
+	; frag = magenta
+	; context = white
+	; whitespace = yellow reverse
+	; old = red
+
+[color "decorate"]
+	HEAD = red
+	branch = green
+	remoteBranch = brightgreen
