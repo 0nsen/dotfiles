@@ -19,20 +19,13 @@ return require('packer').startup(function(use)
 
 	use "lukas-reineke/indent-blankline.nvim"
 
-	use {
-		'VonHeikemen/lsp-zero.nvim',
-		branch = 'v3.x',
-		requires = {
-			--- Uncomment the two plugins below if you want to manage the language servers from neovim
-			{'williamboman/mason.nvim', tag = 'v1.11.0'}, -- temp workaround mason breaking changes
-			{'williamboman/mason-lspconfig.nvim', tag = 'v1.32.0'}, -- temp workaround mason breaking changes
+	use 'williamboman/mason.nvim'
+	use 'williamboman/mason-lspconfig.nvim'
 
-			{'neovim/nvim-lspconfig'},
-			{'hrsh7th/nvim-cmp'},
-			{'hrsh7th/cmp-nvim-lsp'},
-			{'L3MON4D3/LuaSnip'},
-		}
-	}
+	use 'neovim/nvim-lspconfig'
+	use 'hrsh7th/nvim-cmp'
+	use 'hrsh7th/cmp-nvim-lsp'
+	use 'L3MON4D3/LuaSnip'
 
 	-- some of the packages require this
 	use 'nvim-tree/nvim-web-devicons'
