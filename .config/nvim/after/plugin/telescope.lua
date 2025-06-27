@@ -10,7 +10,9 @@ vim.keymap.set('n', '<leader>gw', builtin.grep_string, {})
 vim.keymap.set('n', '<leader>bg', builtin.current_buffer_fuzzy_find, {})
 
 vim.keymap.set('n', '<leader>ds', builtin.lsp_document_symbols, {})
+vim.keymap.set('n', '<leader>mk', builtin.marks, {})
 
+vim.keymap.set('n', '<leader>bf', builtin.buffers, {})
 
 telescope.setup {
 	defaults = {
