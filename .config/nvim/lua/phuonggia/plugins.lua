@@ -83,4 +83,11 @@ return require('packer').startup(function(use)
 	use 'CopilotC-Nvim/CopilotChat.nvim'
 
 	use 'mbbill/undotree'
+
+	use({
+		"stevearc/conform.nvim",
+		config = function()
+			require("conform").setup()
+		end,
+	})
 end)
